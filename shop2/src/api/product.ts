@@ -1,14 +1,27 @@
+import type { IPagination } from '@/types/global';
 import type { IProduct } from '@/types/product';
 
 
-export const getProduct = async (): Promise<IProduct[]> => {
-  try {
+interface IResponseProducts {
+  products: IProduct[],
+  pagination: IPagination
+}
 
-    const fetchResponse = await fetch(`https://vue-study.skillbox.cc/api/products`);
+export const getProduct = async (page: number = 1): Promise<IResponseProducts> => {
+  try {
+    const query = new URLSearchParams({
+      page: String(page),
+      limit: String(8)
+    }) 
+
+    const fetchResponse = await fetch(`https://vue-study.skillbox.cc/api/products?${query}`);
     const response = await fetchResponse.json();
     const products = response.items
 
-    return products
+    return {
+      products: products,
+      pagination: response.pagination
+    }
   
 
   } catch (err) {
