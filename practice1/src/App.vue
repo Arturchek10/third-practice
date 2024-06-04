@@ -17,9 +17,16 @@
 
 </script>
 
-<style>
+<style >
 html{
-   
+  background: #DDA0DD;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+head{
+  margin:auto
 }
 .main{
   text-align: center;
@@ -30,6 +37,11 @@ html{
 .link{
   color: green;
   text-decoration: none;
+}
+.roboto-slab {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 </style>

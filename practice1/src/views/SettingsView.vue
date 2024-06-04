@@ -50,7 +50,7 @@ onMounted(() => {
 </script>
 
 
-<style >
+<style scoped >
 html{
   background: #DDA0DD;
 }
@@ -59,6 +59,10 @@ html{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 .container{
   width: 200px;
@@ -70,6 +74,9 @@ html{
   margin: auto;
   margin-top: 100px;
   justify-content: center;
+}
+h2{
+  margin: 19.20px 0 19.20px 0;
 }
 .button{
   width: 64px;
@@ -93,10 +100,11 @@ input:checked + .button{
   display: none;
 }
 .description{
-  width: 50%;
+  width: 40%;
   font-size: 15px;
   margin: auto;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 5%; 
 }
+
 </style>

@@ -49,9 +49,9 @@ const changePage = async(page: number) => {
 loadProducts(pagination.value.page)
 </script>
 
-<style>
-.header{
-  margin-left: 30px
+<style scoped>
+*{
+  font-weight: 400;
 }
 .product-list{
   display: flex;
@@ -59,9 +59,7 @@ loadProducts(pagination.value.page)
   margin-left: 28%;
   width: 50%;
 }
-h2{
-  margin-right: 2%
-}
+
 .pagination{
   display: block;
   padding: 10px;

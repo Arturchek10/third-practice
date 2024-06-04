@@ -43,8 +43,8 @@ const props = defineProps<{ product: IProduct }>()
   border-radius: 6px 6px 0 0;
 }
 .product-title {
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.15rem;
+  font-weight: 400;
 }
 .product-text {
   font-size: 1rem;
