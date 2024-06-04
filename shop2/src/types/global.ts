@@ -1,5 +1,5 @@
 export interface IPagination {
-  pages: number
-  total: number,
-  page: number,
+  pages: number // всего страниц
+  total: number, // кол-во элементов
+  page: number, // текущая страница
 }

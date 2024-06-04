@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div>
     <div class="header">
       <router-link :to="{name: 'product', query: {}}"></router-link>
@@ -16,4 +16,4 @@ import { useRoute } from 'vue-router';
 
 const route = useRoute()
 
-</script>
+</script> -->
