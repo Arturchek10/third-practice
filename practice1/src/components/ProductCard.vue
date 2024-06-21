@@ -1,27 +1,24 @@
 <template>
-  <div :class="['product'] ">
+  <div :class="['product']">
     <img :src="product.image.file.url" class="product-img-top" alt="product image">
     <div class="product-body">
       <h5 class="product-title">{{ product.title }}</h5>
       <p :class="['product-text']">
         {{ product.price }} ₽
       </p>
+      <button @click="$emit('openCard', product.id)">открыть</button>
     </div>
-    <!-- <button @click="showSmallPriceClass = !showSmallPriceClass">Change class</button> -->
+   
   </div>
 </template>
 
 <script setup lang="ts">
 import type {IProduct} from "@/types/product";
-// import {computed, ref} from 'vue';
+import { emit } from "process";
 
 const props = defineProps<{ product: IProduct }>()
-// const showSmallPriceClass = ref(false);
+const emit = defineEmits(['openCard'])
 
-// const propsIsSmall = computed(() => {
-//   console.log(props.product.id);
-//   return !showSmallPriceClass.value && props.product.price !== undefined && props.product.price < 5000
-// })
 
 </script>
 
@@ -55,8 +52,19 @@ const props = defineProps<{ product: IProduct }>()
 } */
 .product-body {
   padding: 4px;
+  height: 200px;
 }
 h5 {
   margin: 16px 0;
+}
+
+.openCard-button{
+  width: 140px;
+  height: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.openCard-button:hover{
+  transform: scale(1.1);
 }
 </style>

@@ -3,7 +3,7 @@
     <div class="head">
       <h1 class="title-name">project title</h1>
       <router-link class='link' style="margin-right: 30px;" to="/catalog">catalog</router-link>
-      <router-link class='link' to="/settings">settings</router-link>
+      <router-link class='link' style="padding-right: 30px;" to="/settings">settings</router-link>
     </div>
     <router-view/> 
   </div>
