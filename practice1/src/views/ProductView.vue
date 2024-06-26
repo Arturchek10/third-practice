@@ -16,9 +16,9 @@
 </template>
 
 <script setup lang="ts">
-import { useRoute } from 'vue-router';
+import { useRoute } from 'vue-router'
 import {onMounted, ref} from 'vue'
-import { IProduct } from 'api/product';
+import { IProduct } from 'api/product'
 
 const route = useRoute()
 const product = ref<IProduct | null>(null)

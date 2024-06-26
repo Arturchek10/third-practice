@@ -77,7 +77,7 @@ const changePage = async(page: number) => {
 
 
 const obj = ref({id: 1})
-const obj2 =ref({id: 1})
+const obj2 = ref({id: 1})
 
 setTimeout(() => {
   obj.value.id = 2;
